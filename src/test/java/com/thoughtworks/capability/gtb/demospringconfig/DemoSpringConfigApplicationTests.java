@@ -20,6 +20,5 @@ class DemoSpringConfigApplicationTests {
 	public void shouldTestLevelController_overridePropertyValues() {
 		String levelNumber = levelController.getLevel();
 		assertEquals("basic", levelNumber);
-
 	}
 }
