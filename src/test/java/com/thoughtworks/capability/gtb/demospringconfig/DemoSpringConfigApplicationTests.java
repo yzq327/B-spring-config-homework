@@ -10,8 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
-@ActiveProfiles("test")
+@SpringBootTest(properties = { "levelNumber=0" })
 class DemoSpringConfigApplicationTests {
 
 	@Autowired
@@ -20,7 +19,7 @@ class DemoSpringConfigApplicationTests {
 	@Test
 	public void shouldTestLevelController_overridePropertyValues() {
 		String levelNumber = levelController.getLevel();
-		assertEquals("advanced", levelNumber);
+		assertEquals("basic", levelNumber);
 
 	}
 }
