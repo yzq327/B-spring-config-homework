@@ -12,11 +12,6 @@ import static org.junit.Assert.assertEquals;
 @SpringBootTest
 class DemoSpringConfigApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
-
 	@Autowired
 	private LevelController levelController;
 
